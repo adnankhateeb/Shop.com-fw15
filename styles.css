@@ -466,6 +466,13 @@ li > button {
   /* align-content: center; */
 }
 
+#container2 button{
+  background-color: #414467;
+  color: white;
+  height: 5em;
+  align-self: center;
+  padding: 15px;
+}
 
 /* media queries */
 /* 
