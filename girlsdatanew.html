@@ -4,75 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Girl's Clothes</title>
+    <title>Girl Kid</title>
     <link rel="stylesheet" href="stylegirl.css" />
     <!-- <link rel="stylesheet" href="nav-styles.css"> -->
+    <script src="https://kit.fontawesome.com/278cf368e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="nav-styles.css">
     <script src="girls_data.js"></script>
   </head>
   <body>
 
-    <div id="nav1">
-    
-        <div id="nav2">
-            <div class="logo"><a href=""><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"
-                        alt=""></a>
-            </div>
-
-            <div class="search">
-
-                <input type="text" placeholder="Search SHOP.COM...">
-                <div class="icon" <a href=""><i class="fas fa-search"></i></a></div>
-                <!-- <input type="submit" class="srctext" value="Search"> -->
-            </div>
-            <div class="left">
-                <div class="logo2"><a href=""><img
-                            src="https://img.shop.com/Image/header2013/shop-usa-86816-valentines-lp-banners-jan221642025439549.jpeg"
-                            alt=""></a></div>
-                 </div>
-
-            </div>
-        <div id="nav2">
-            <div class="logo">
-                <a href="">
-                    <div class=brgr><i class="fas fa-bars"> Categories</i></div>
-                </a>
-            </div>
-
-            <div class="search2">
-                <div class="gap">
-
-                    <a href="">
-                        <h4>Exclusive Brands</h4>
-                    </a>
-                    <a href="">
-                        <h4>Store</h4>
-                    </a>
-                    <a href="">
-                        <h4>Deals</h4>
-                    </a>
-                    <a href="">
-                        <h4>SHOP Travel</h4>
-                    </a>
-                    <a href="">
-                        <h4>Departments</h4>
-                    </a>
-                    <a href="">
-                        <h4>ShopBuddy</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="left">
-                <a href=""><i class="fas fa-user-circle"> Sign in</i></a>
-                <a href=""><i class="fas fa-redo-alt"> Orders</i></a>
-                <a href=""><i class="fas fa-shopping-cart"> Cart</i></a>
-            </div>
-        </div>
+    <div id="mainnav">
+      <div id="nav1">
+  
+          <div id="nav2">
+  
+              <div class="logo"><a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"
+                          alt=""></a>
+              </div>
+  
+              <div class="search">
+  
+                  <input type="text" placeholder="Search SHOP.COM...">
+                  <div class="icon" <a href=""><i class="fas fa-search"></i></a></div>
+                  <!-- <input type="submit" class="srctext" value="Search"> -->
+              </div>
+              <div class="left">
+                  <div class="logo2"><a href="home.html"><img
+                              src="https://img.shop.com/Image/header2013/shop-usa-86816-valentines-lp-banners-jan221642025439549.jpeg"
+                              alt=""></a></div>
+              </div>
+          </div>
+          <div id="nav2">
+  
+              <div class="logo">
+                  <a href="">
+                      <div class=brgr><i class="fas fa-bars"> Categories</i></div>
+                  </a>
+              </div>
+  
+              <div class="search2">
+                  <div class="gap">
+  
+                      <a href="menShopPage.html">
+                          <h4>Shop For Men</h4>
+                      </a>
+                      <a href="womenShopPage.html">
+                          <h4>Shop For Women</h4>
+                      </a>
+                      <a href="girlsdatanew.html">
+                          <h4>Shop For Girls</h4>
+                      </a>
+                      <a href="">
+                          <h4>SHOP Travel</h4>
+                      </a>
+                      <a href="">
+                          <h4>Departments</h4>
+                      </a>
+                      <a href="">
+                          <h4>ShopBuddy</h4>
+                      </a>
+                  </div>
+              </div>
+              <div class="left">
+                  <a href="login.html"><i class="fas fa-user-circle"> Sign in</i></a>
+                  <a href=""><i class="fas fa-redo-alt"> Orders</i></a>
+                  <a href="cart.html"><i class="fas fa-shopping-cart"> Cart</i></a>
+              </div>
+          </div>
+      </div>
     </div>
-
+<!-- Main Content-->
     <div class="selects">
       <span>Sort:</span
       ><select id="sortPrice" onchange="sortPrice()">
@@ -82,68 +88,46 @@
       </select>
       
     </div>
+    
     <div id="main">
       <div id="sidebar">
-        <!-- <ul class="sideLists">
-          <div class="XEfilter">
-            <select id="filterDress" onclick="filterDress()">
-              <option value="">Dress Type</option>
-              <option value="T-shirt">T-shirt</option>
-              <option value="Top">Top</option>
-              <option value="Leggings">Leggings</option>
-              <option value="Shirt">Shirts</option>
-              <option value="Shorts">Shorts</option>
-            </select>
-          </div>
-          <div class="XEbrand">
-            <select id="brandDress" onclick="brandDress()">
-              <option value="">Dress Brands</option>
-              <option value="Biba">Biba</option>
-              <option value="Zara">Zara</option>
-              <option value="Calvin">Calvin</option>
-              <option value="Levis">Levis</option>
-            </select>
-          </div>
-        </ul> -->
-        
-
         <div id="sidebar1">
-            
           <ul>
             <li id="filter">
-              Dress Type
-              <span id="dress1" class="material-icons"
-                >keyboard_arrow_down</span
-              >
-              <ul class="hide">
-                <li id="Top">Top</li>
-                <li id="T-shirt">T-shirt</li>
-                <li id="Leggings">Leggings</li>
-                <li id="Shirt">Shirt</li>
-                <li id="Sort">Sort</li>
-              </ul>
+                Dress Type
+                <span id="dress1" class="material-icons"
+                  >keyboard_arrow_down</span
+                >
+                <ul class="hide">
+                  <li id="Top">Top</li>
+                  <li id="T-shirt">T-shirt</li>
+                  <li id="Leggings">Leggings</li>
+                  <li id="Shirt">Shirt</li>
+                  <li id="Sort">Sort</li>
+                </ul>
             </li>
           </ul>
           <hr>
-          <ul>
-            <li id="brand">
-              Dress Brands
-              <span id="dress2" class="material-icons"
-                >keyboard_arrow_down</span
-              >
-              <ul class="hide2">
-                <li id="Biba">Biba</li>
-                <li id="Zara">Zara</li>
-                <li id="Levis">Levis</li>
-                <li id="Calvin">Calvin</li>
-              </ul>
-            </li>
-          </ul>
+            <ul>
+              <li id="brand">
+                  Dress Brands
+                  <span id="dress2" class="material-icons"
+                  >keyboard_arrow_down</span>
+                    <ul class="hide2">
+                      <li id="Biba">Biba</li>
+                      <li id="Zara">Zara</li>
+                      <li id="Levis">Levis</li>
+                      <li id="Calvin">Calvin</li>
+                    </ul>
+              </li>
+            </ul>
           <hr>
-        </div>
       </div>
+       </div>
       <div id="container"></div>
     </div>
+
+  <!-- footer -->
     <footer id="footer">
       <div class="footer-up">
         <div class="deals-1">
@@ -210,6 +194,7 @@
 <script>
   
   var girlsData = JSON.parse(localStorage.getItem("girlData")) || [];
+  var cartItems = JSON.parse(localStorage.getItem("CartArray")) || [];
 
   populate(girlsData);
 
@@ -353,31 +338,7 @@
     populate(girlsData);
   }
 
-  //  var selected1 = document.querySelector("#Top").textContent
-  //   console.log(selected1);
-  //   var selected2 = document.querySelector("#T-shirt").textContent;
-
-  //   var selected3 = document.querySelector("#Shirts").textContent;
-
-  //   var selected4 = document.querySelector("#Shorts").textContent;
-
-  //   var selected5 = document.querySelector("#Biba").textContent;
-
-  //   var selected6 = document.querySelector("#Zara").textContent;
-
-  //   var selected7 = document.querySelector("#Levis").textContent;
-
-  //   var selected8 = document.querySelector("#Calvin").textContent;
-
-  //   function filterDress() {
-  //     var selected1 = document.querySelector("#Top").textContent;
-
-  //     var filarr = girlsData.filter(function (elem) {
-  //       return elem.type == selected1;
-  //     });
-
-  //     populate(filarr);
-  //   }
+  
 
   function populate(girlsData) {
     document.querySelector("#container").innerHTML = "";
@@ -453,12 +414,12 @@
 
       var btnBO = document.createElement("button");
       btnBO.setAttribute("class", "btn2");
-      btnBO.textContent = "See Details";
+      btnBO.textContent = "Buy Now";
       btnBO.addEventListener("click", function () {});
 
       var btn = document.createElement("button");
       btn.setAttribute("class", "btn");
-      btn.textContent = "Buying Options";
+      btn.textContent = "Add To Cart";
       btn.addEventListener("click", function () {
         addToCart(elem);
       });
