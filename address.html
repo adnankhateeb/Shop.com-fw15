@@ -88,7 +88,7 @@
             <input type="text" class="CVV" placeholder="Enter your state" />
             <p>Country</p>
             <input type="text" class="expDate" placeholder="Enter Country" />
-            <input type="submit" id="submit" onsubmit = "window.location.href = 'address.html'" />
+            <input type="submit" id="submit" />
         </form>
     </div>
 
@@ -149,3 +149,23 @@
 </body>
 
 </html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", redirectToPayment);
+    function redirectToPayment(event){
+        event.preventDefault();
+
+        var streetAddress = document.querySelector(".name").value;
+        var city =  document.querySelector(".cardNumber").value;
+        var state = document.querySelector(".CVV").value;
+        var country = document.querySelector(".expDate").value;
+
+        if(streetAddress == "" || city == "" || state == "" || country == ""){
+            alert("Please fill all address fields");
+        }
+        else{
+            alert("Address entered");
+        window.location.href = "payment.html";
+        }
+    }
+</script>
