@@ -46,6 +46,7 @@
 
         #btn:hover {
             background-color: rgb(11, 11, 32);
+            cursor: pointer;
         }
 
         #button {
@@ -66,6 +67,7 @@
         #button:hover {
             color: white;
             background-color: rgb(11, 11, 32);
+            cursor: pointer;
 
         }
 
@@ -100,7 +102,7 @@
 
             <div id="nav2">
 
-                <div class="logo"><a href=""><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"
+                <div class="logo"><a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"
                             alt=""></a>
                 </div>
 
@@ -128,14 +130,14 @@
                 <div class="search2">
                     <div class="gap">
 
-                        <a href="">
-                            <h4>Exclusive Brands</h4>
+                        <a href="menShopPage.html">
+                            <h4>Shop For Men</h4>
                         </a>
-                        <a href="">
-                            <h4>Store</h4>
+                        <a href="womenShopPage.html">
+                            <h4>Shop For Women</h4>
                         </a>
-                        <a href="">
-                            <h4>Deals</h4>
+                        <a href="girlsdatanew.html">
+                            <h4>Shop For Girls</h4>
                         </a>
                         <a href="">
                             <h4>SHOP Travel</h4>
@@ -149,9 +151,9 @@
                     </div>
                 </div>
                 <div class="left">
-                    <a href=""><i class="fas fa-user-circle"> Sign in</i></a>
+                    <a href="login.html"><i class="fas fa-user-circle"> Sign in</i></a>
                     <a href=""><i class="fas fa-redo-alt"> Orders</i></a>
-                    <a href=""><i class="fas fa-shopping-cart"> Cart</i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"> Cart</i></a>
                 </div>
             </div>
         </div>
@@ -168,7 +170,7 @@
 
                 <h4>OR</h4>
 
-                <div id="button" onclick="window.location.href='signup.html'">Create your new account </div>
+                <div id="button" onclick="window.location.href='home.html'">Create your new account </div>
 
             </form>
 
@@ -252,7 +254,7 @@
         }
         if (flag == true) {
             alert("Login successful");
-            window.location.href = "signup.html";
+            window.location.href = "home.html";
         }
         else {
             alert("wrong credential");
