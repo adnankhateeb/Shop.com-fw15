@@ -190,6 +190,10 @@ a:hover {
   padding: 5px;
   border: 0;
 }
+
+.card:hover{
+  cursor:auto;
+}
 button {
   padding: 5px;
   border: 0;
@@ -200,6 +204,7 @@ button {
 button:hover {
   color: white;
   background-color: #2e2c38;
+  cursor: pointer;
 }
 .deals-1 > p {
   color: white;
