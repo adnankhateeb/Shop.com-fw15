@@ -98,6 +98,7 @@ i:hover{
 .thinFont{
   font-weight: 500;
   margin-left: 5px;
+  font-family: sans-serif;
 }
 #header-right-top > input {
   border: 1px solid black;
